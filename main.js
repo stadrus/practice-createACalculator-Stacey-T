@@ -32,6 +32,7 @@ console.log(squareRootFinder(144));
 /* Determine the largest and smallest values from [3, 78, -12, 
 0.5, 27].*/
 /* Using Math.max() & Math.min()*/
+// Math.max and Math.min will not take an array you will have to first sort the array or use spread syntax//
 function maxAndMinFinder(num){
     let maxNum = Math.max(...num);
     let minNum = Math.min(...num);
@@ -40,4 +41,22 @@ function maxAndMinFinder(num){
 console.log(maxAndMinFinder([3, 78, -12, 
     0.5, 27]));
 
+//Scenario Five: Random Number Generator//
+/*Generate a random integer within a 
+specified range. */
+/* Generate a random number between 1 and 50 */
+function randomNumber(){
+    return Math.floor((Math.random() * 50) + 1);;
+}
+console.log(randomNumber());
 
+//Scenario Six:Custom Rounding//
+/*Round a number to a specified number of decimal 
+places.*/
+/* use Math.round() method*/
+function roundingDecimals (num){
+    return Math.round(num * 100) /100;
+}
+console.log(roundingDecimals(23.67891));
+/* Combine the individual functions into a single "calculator" program 
+where the user can select an operation and input the required values*/
